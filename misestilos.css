@@ -9,16 +9,66 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3em;
 }
-.menu{
+.contenedor{
 
-    padding: 20px;
-    background-color:#F0B429 ;
     width: 100%;
-    font-size: 2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: auto;
     
+} 
 
+.navegacion{
+
+    width: 100%;
+    margin: 30px auto;
+    background-color:#F0B429;
+      
 }
+  
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    color: mediumblue;
+    text-decoration: none;
+    display: block;
+    padding: 10px 50px;
+}
+
+.menu li a:hover{
+    background-color: white;
+}
+
+.submenu{
+    position: absolute;
+    background-color:#F0B429;
+    width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+    color: mediumblue;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+} 
+
+.menu li:hover .submenu{
+    visibility: visible;
+	opacity: 1;
+    
+}
+
+
+
 .tabla{
 
 width: 80%;
@@ -30,6 +80,7 @@ text-align: justify;
 
 .base{
 background-color:#005883 ;
+width: 100%;
 padding: 10px;
 text-align: center;
 color: white;
